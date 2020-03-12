@@ -27,7 +27,21 @@
         <link type="text/css" rel="stylesheet" href="style/slideshow.css">
     </head>
     <body>
-        
+    </style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
 <div class="slider" id="main-slider">
 	<div class="slider-wrapper">
 		<img class="slide scale" src="img/ellenYellowHat.jpeg" alt="First" />
@@ -36,18 +50,22 @@
 	</div>
 </div>	
 
-<div class="mainCenter">
-<h1 id="page-header" style="display: inline-block;">Ello artist</h1>
+<div class="main-center">
+    <div class="div-center">
+        <div class="push-right">
+            <h1 id="page-header" style="display: inline-block;">Ello artist</h1>
 
-<div class="divCenter">
-    <h2 style="display: inline-block;" id="summation">fine artist. muralist</h2>
-
-    <div class="text-content transbox" data-slice-type="body"><p id=exposition>Vibrant fine art and murals that celebrate your business and passion by increasing social dialogue.  Informed by craft and colors of an academic painting and traditional stained glass background, and the landscape of South Louisiana.&nbsp;</p></div>
-
-    <div class="mail" style="display: block;">
-        <a href="mailto:ellenogdenart@gmail.com">Email</a></div>
+            <h2 style="display: inline-block;" id="summation">fine artist. <span class="push-left">muralist.</span></h2>
         </div>
 
+        <div class="text-content">
+            <p id=exposition>Vibrant fine art and murals that celebrate your business and passion by increasing social dialogue.  Informed by craft and colors of an academic painting and traditional stained glass background, and the landscape of South Louisiana.&nbsp;</p>
+        </div>
+
+        <div class="mail" style="display: block;">
+            <a href="mailto:ellenogdenart@gmail.com">Email</a>
+        </div>
+    </div>
 </div>
 
 
@@ -59,6 +77,15 @@
 
 
     <script src="js/slideshow.js"></script>
-
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>

@@ -5,47 +5,169 @@ body {
     background: rgba(19, 19, 19, 0.6) 
 }
 
-h1 {
 
-    /* font-family: sans-serif; */
+img {
+    filter: brightness(90%) contrast(115%) opacity(67%) grayscale(0%);
+    /* filter: contrast(70%) */
+    /* filter: opacity(10%); */
+  }
+
+
+/******************************TOP NAV INSERT *****************************/
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    z-index:100;
+    opacity: 90%;
+    position:fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: stretch;
+  }
+  
+  .topnav a {
+    flex: 1;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:  #fa9403;
+    color: black;
+  }
+
+  .active {
+    background-color:#0485b1;
+    color:   #fa9403;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+/******************************TOP NAV INSERT *****************************/
+
+.main-center {
+
+    font-family: "futura-pt";
     text-rendering: optimizeLegibility;
+    /* position: relative; */
+    padding: 40px 60px 60px 60px;
+    box-sizing: border-box;
+    height: 100vh;
     text-align: center;
     position: relative;
-    width: auto;
-    margin: 0 auto;
-    max-width: 880px;
-    font-family: "futura-pt";
-
+    margin: 0;
+    
 }
 
-/* @ media change or change mail to same div as content */
-/* .mail {
-    font-family: sans-serif;
-    text-rendering: optimizeLegibility;
-    text-align: center;
-    display: block;
+.div-center {
     position: absolute;
-    top: 70vh;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);   
+    text-align: center;
+    top: 50%;
+    box-sizing: border-box;
+    transform: translatey(-50%);
+    left: 60px;
+    right: 60px;
+    width: auto;
+    margin: 0 auto;
+    max-width: 1880px;
+}
 
 
-} */
+
+#page-header {
+    max-width: 880px;
+    font-size: 4.0vw;
+    
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    font-weight: 500;
+    font-style: normal;
+    /* color: #fff; */
+    line-height: 1em;
+    margin-top: 0em;
+    display: inline-block;
+    /* background-color: rgba(0,0,0,0.02);
+    border-radius: 55px; */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    padding-left: 0.2em;
+    padding-right: 3.15em;
+}
+
+h2 {
+    max-width: 1800px;
+    /* text-rendering: optimizeLegibility; */
+    text-align: center;
+    margin: 0;
+    margin-top: -.4em;
+    margin-bottom: 0.0em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0em;
+    font-family: "futura-pt";
+    font-size: 12vw;
+    line-height: .90em;
+    text-transform: none;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0,0,0,0.3); */
+    /* color: #fff; */
+    display: inline-block;
+   
+}
+
+.push-left {
+    padding-right: .5em;
+}
+
+.push-right {
+    padding-left: 1.5em;
+}
+
+.text-content {
+    /* background-color: rgba(0,0,0,0.1); */
+    padding-left: 0 .02em;
+   
+   /* -webkit-text-stroke-width: 1px; */
+   /* -webkit-text-stroke-color: rgba(0,0,0,0.2); */
+   text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+   padding-right: 0.02em;  
+   max-width: 50%;
+   margin:auto;
+   font-size:1.1em;
+   border-radius:  15px;
+   margin-left: 1px;
+   margin-right: 1px;
+   margin: auto;  
+
+   line-height: 1.4em;
+    letter-spacing: .04em;
+    font-weight: 400;
+}
 
 
 .mail {
     margin-top:1em;
 }
 .mail a {
-    padding: .3em .3em .3em .6em;
+    padding: 1.15em 1.50em 1.15em 1.55em;
     color: white;
-    background-color: rgba(0,0,0,0.09);
+    background-color: rgba(0,0,0,0.2);
     border: 2px solid #fff;
     /* margin-left: 0; */
-    transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
+    transition: color 170ms ease-in-out;border-color: 170ms ease-in-out;
     display: inline-block;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: .2em;
     font-weight: 600;
@@ -56,162 +178,53 @@ h1 {
     background-color: ghostwhite;
     color: rgb(70,70,70);
 }
-    /* 
-.mail-button {
-    background-color: transparent;
-    color: blue;
-    border: 2px solid #fff;
-    transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-weight: 500;
-    font-style: normal
-} */
-#page-header {
-    text-rendering: optimizeLegibility;
-    text-align: center;
-    margin: 0;
-    font-family: "futura-pt";
-    /* font-size: 22px; */
-    text-transform: uppercase;
-    
-    letter-spacing: .14em;
-    font-weight: 500;
-    font-style: normal;
-    /* color: #fff; */
-    line-height: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: inline-block;
-    background-color: rgba(0,0,0,0.02);
-    border-radius: 55px;
-    padding-left: 0.2em;
-    padding-right: 0.15em;
 
-}
-
-
-h2 {
-    max-width: 1800px;
-    /* text-rendering: optimizeLegibility; */
-    text-align: center;
-    margin: 0;
-    margin-top: 0em;
-    margin-bottom: 0.57em;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0em;
-    font-family: "futura-pt";
-    font-size: 12vw;
-    line-height: 1.289em;
-    text-transform: none;
-    letter-spacing: 0.06em;
-    font-weight: 500;
-    font-style: normal;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    /* color: #fff; */
-    display: inline-block;
-   ;
-}
-
-p {
-    text-rendering: optimizeLegibility;
-    text-align: center;
-    margin: 0;
-    font-family: "futura-pt";
-    line-height: 1.4em;
-    text-transform: none;
-    letter-spacing: .04em;
-    font-weight: 400;
-    font-style: normal;
-    /* color: #fff; */
-    /* font-size: 17px; */
-    white-space: pre-wrap;
-    color: white;
-}
-
-
-
-#exposition {
-     /* background-color: rgba(0,0,0,0.1); */
-     padding-left: 0 .02em;
-    
-
-     /* taken from: 
-     https://css-tricks.com/adding-stroke-to-web-text/
-     */
-        /* -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgb(29, 29, 29);  font-weight: 600;
-         padding-right: 0.02em;
+@media only screen and (max-width: 550){
+    h2 {
+        font-size: 16vw;
+        color: red;
         
-}
-
-
-.letterBacker {
-    background-color: rgba(0,0,0,0.08);
-    border-radius:65px;
-}
-
-.mainCenter {
-
-    font-family: sans-serif;
-    text-rendering: optimizeLegibility;
-    position: relative;
-    padding: 40px 60px 60px 60px;
-    box-sizing: border-box;
-    height: 100vh;
-    text-align: center;
-    position: relative;
-    /* border: 5px solid orange; */
-
-}
-
-.divCenter {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
-    font-family: sans-serif;
-    text-rendering: optimizeLegibility;
-    text-align: center;
-    top: 50%;
-    box-sizing: border-box;
-    transform: translatey(-50%);
-    position: absolute;
-    left: 60px;
-    right: 60px;
-    width: auto;
-    margin: 0 auto;
-    max-width: 1880px;
-}
-.text-content {
-    max-width: 880px;
-    margin:auto;
-    font-size:1.1em;
-    border-radius:  15px;
-    margin-left: 1px;
-    margin-right: 1px;
-    margin: auto;
-}
-
-@media only screen and (max-width: 455px) {
-    body {
-      
     }
     #page-header {
-        font-size: 1.50em;
+        font-size: 6vw;
     }
-    .mainCenter {
-        border: 5px solid white;
+}
 
+@media only screen and (max-width: 500px) {
+     body {
+        font-size: 1.2em;
     }
-    #exposition {
-        font-size:6vw;
+    .text-content {
+        max-width: 80%;
+        font: red;
     }
+    
+
+    h2 {
+      
+    } 
+    .topnav {
+        flex-wrap: wrap; 
+    }
+    .topnav > a {  
+      flex: 1 1;  
+    }  
+    .mail {
+        margin-top:1.5em;
+    }
+    #exposition {color: blue}
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
