@@ -1,0 +1,47 @@
+html,body {
+	margin: 0;
+	padding: 0;
+}
+.slider {
+	/* width: 100vw; */
+	margin: 0em auto;
+	
+}
+
+.slider-wrapper {
+	/* width: 100vw;
+	height: 400px; */
+	position: absolute;
+}
+
+.slide {
+	top: 0px;
+	position: absolute;
+	/* width: 100vw;
+	height: 100vw; */
+	opacity: 0;
+	transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+.crop-height {
+    /* max-width: 1200px; /* img src width (if known) */
+    min-height: 100vh;
+    overflow: hidden; 
+  }
+  
+  img.scale {
+    /* corrects inline gap in enclosing div */
+    display: block;
+    object-fit: cover;
+    min-height: 100vh;
+    max-height: 100vh;
+    /* just in case, to force correct aspect ratio */
+    /* height: auto!important; */
+    width: 100vw; 
+    /* lt ie8 */
+    /* -ms-interpolation-mode: bicubic;  */
+  }
