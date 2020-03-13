@@ -2,7 +2,13 @@
 body {
     background-color: darkslategray;
     color: ghostwhite;
-    background: rgba(19, 19, 19, 0.6) 
+    background: rgba(19, 19, 19, 0.6);
+    position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
 }
 
 
@@ -212,8 +218,39 @@ h2 {
     .mail {
         margin-top:1.5em;
     }
-    #exposition {}
+    #exposition {color: white}
   }
+
+@media only screen and (max-width: 450px) {
+    body { 
+        font-size: .9em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body { 
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    body { 
+        font-size: .7em;
+    }
+    .text-content {
+        max-width: 92%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    body { 
+        font-size: .65em;
+    }
+
+    .text-content {
+        max-width: 98%;
+    }
+}
 
 
 
