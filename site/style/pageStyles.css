@@ -149,7 +149,7 @@ h2 {
    padding-right: 0.02em;  
    max-width: 50%;
    margin:auto;
-   font-size:1.1em;
+   font-size:1.3em;
    border-radius:  15px;
    margin-left: 1px;
    margin-right: 1px;
@@ -186,28 +186,49 @@ h2 {
     color: rgb(70,70,70);
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1150px) {
+    body {
+        font-size: 2.7vw;
+    }
     .text-content {
         max-width: 75%;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 750px) {
     .text-content {
-        max-width: 85%;
+        max-width: 82%;
     }
+    .text-content {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     .div-center {
         left:25px;
         right: 25px;
     }
+    .text-content {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .text-content {
+        max-width: 88%;
+    }
+    .text-content {
+        font-size: 5vw;
+    }
+  
 }
 @media only screen and (max-width: 500px) {
      body {
         font-size: 1.0em;
     }
     .text-content {
-        
-        color: red;
+        font-size: 6vw;
     }
     
     .topnav {
@@ -219,7 +240,7 @@ h2 {
     .mail {
         margin-top:1.5em;
     }
-    #exposition {color: white}
+   
   }
 
 @media only screen and (max-width: 450px) {
@@ -241,10 +262,13 @@ h2 {
 
 @media only screen and (max-width: 370px) {
     body { 
-        font-size: .8em;
+        font-size: 6vw;
     }
     .text-content {
         max-width: 98%;
+    }
+    .text-content {
+        font-size: 7vw;
     }
 }
 
