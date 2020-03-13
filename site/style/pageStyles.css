@@ -196,6 +196,10 @@ h2 {
     .text-content {
         max-width: 85%;
     }
+    .div-center {
+        left:25px;
+        right: 25px;
+    }
 }
 @media only screen and (max-width: 500px) {
      body {
@@ -219,18 +223,13 @@ h2 {
   }
 
 @media only screen and (max-width: 450px) {
-    body { 
-        font-size: .95em;
-    }
     .text-content {
         max-width: 90%;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    body { 
-        font-size: .9em;
-    }
+
     .div-center {
         left:25px;
         right: 25px;
@@ -251,7 +250,7 @@ h2 {
 
 @media only screen and (max-width: 340px) {
     body { 
-        font-size: .68em;
+        font-size: .8em;
     }
 
     .text-content {
