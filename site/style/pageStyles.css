@@ -86,24 +86,24 @@ img {
 }
 
 
-
 #page-header {
     max-width: 880px;
-    font-size: 4.0vw;
-    
+    font-size: 1.9vw;
     text-transform: uppercase;
     letter-spacing: .14em;
     font-weight: 500;
     font-style: normal;
     /* color: #fff; */
     line-height: 1em;
+    margin: auto;
     margin-top: 0em;
-    display: inline-block;
+    display: block;
     /* background-color: rgba(0,0,0,0.02);
     border-radius: 55px; */
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     padding-left: 0.2em;
-    padding-right: 3.15em;
+    padding-right: 1.8em;
+    padding-bottom: .8em;
 }
 
 h2 {
@@ -117,7 +117,7 @@ h2 {
     padding-right: 0;
     padding-bottom: 0em;
     font-family: "futura-pt";
-    font-size: 12vw;
+    font-size: 4.5vw;
     line-height: .90em;
     text-transform: none;
     letter-spacing: 0.06em;
@@ -127,7 +127,7 @@ h2 {
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0,0,0,0.3); */
     /* color: #fff; */
-    display: inline-block;
+    display: block;
    
 }
 
@@ -190,6 +190,15 @@ h2 {
     body {
         font-size: 2.7vw;
     }
+    #page-header {
+        font-size:2.5vw;
+        padding-left: 0.2em;
+        padding-right: 1.65em;
+        padding-bottom: .6em;
+    }
+    h2 {
+        font-size: 5.8vw;
+    }
     .text-content {
         max-width: 75%;
     }
@@ -209,6 +218,15 @@ h2 {
         left:25px;
         right: 25px;
     }
+    #page-header {
+        font-size:3.5vw;
+        padding-left: 0.2em;
+        padding-right: 1.65em;
+        padding-bottom: .6em;
+    }
+    h2 {
+        font-size: 7.8vw;
+    }
     .text-content {
         font-size: 5vw;
     }
@@ -226,6 +244,15 @@ h2 {
 @media only screen and (max-width: 500px) {
      body {
         font-size: 1.0em;
+    }
+    #page-header {
+        font-size:4.5vw;
+        padding-left: 0.2em;
+        padding-right: 1.65em;
+        padding-bottom: .6em;
+    }
+    h2 {
+        font-size: 10.5vw;
     }
     .text-content {
         font-size: 6vw;
